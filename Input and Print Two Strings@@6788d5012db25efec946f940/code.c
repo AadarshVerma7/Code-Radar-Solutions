@@ -2,7 +2,8 @@
 
 int main(){
     char a[100];
-    gets(a);
-    printf("You entered: %s",a);
+    char b[100];
+    scanf("%s %s",&a,&b);
+    printf("You entered: %s and %s",a,b);
     return 0;
 }
