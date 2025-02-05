@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
     int n, i, isPrime = 1;
     scanf("%d", &n);
