@@ -16,13 +16,10 @@ int main() {
     }
     else if (c == '/') {
         if (b == 0) {
-            printf("Error: Division by zero");
+            printf("Error");
         } else {
             printf("%d", a / b);
         }
-    }
-    else {
-        printf("Invalid operator");
     }
 
     return 0;
