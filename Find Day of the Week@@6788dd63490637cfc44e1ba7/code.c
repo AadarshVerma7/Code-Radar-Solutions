@@ -5,6 +5,8 @@ int main(){
     scanf("%d",&a);
     switch (a)
     {
+    case 0:
+        printf("Invalid");
     case 1:
         printf("Monday");
         break;
