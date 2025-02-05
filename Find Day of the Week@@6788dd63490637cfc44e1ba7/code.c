@@ -7,6 +7,7 @@ int main(){
     {
     case 0:
         printf("Invalid");
+        break;
     case 1:
         printf("Monday");
         break;
