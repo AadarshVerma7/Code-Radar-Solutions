@@ -7,7 +7,7 @@ int main(){
     {
         for (int j = a; j >= i; j--)
         {
-            if(i==3){
+            if(i==a){
                 continue
             }
             else{
