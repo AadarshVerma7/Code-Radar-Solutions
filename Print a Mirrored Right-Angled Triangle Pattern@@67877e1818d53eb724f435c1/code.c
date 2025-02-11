@@ -7,13 +7,7 @@ int main(){
     {
         for (int j = a; j >= i; j--)
         {
-            if(i==a){
-                continue;
-            }
-            else{
-                printf(" ");
-            }
-            
+            printf(" ");
         }
         for (int k = 1; k <=i; k++)
         {
