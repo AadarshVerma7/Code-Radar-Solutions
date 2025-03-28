@@ -7,8 +7,8 @@ int main(){
     for(int i = 0;i<length;i++){
         scanf("%d",&arr[i]);
     }   
+    int maximum = 0;
     for(int j = 0; j<length-1;j++){
-        int maximum = 0;
         if(arr[j]>arr[j+1]){
             maximum = j;
         }
