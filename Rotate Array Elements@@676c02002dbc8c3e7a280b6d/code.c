@@ -9,14 +9,17 @@ int main(){
     }
     int rotate;
     scanf("%d",&rotate);
-    int arr2[rotate];
-    for(int i =length-1;i>=length-rotate;i--){
-        int temp = arr[i];
-        arr[i] = arr2[i];
-        arr2[i] = temp;
+    while(rotate>0){
+        int temp = arr[length-1];
+        for(int i = length-2;i>=0;i--){
+            arr[i+1] = arr[i];
+        }
+        arr[0] = temp;
+        rotate--;
     }
-    for(int j=0;j<rotate;j++){
-        printf("%d",arr2[j]);
+
+    for(int i = 0;i<length;i++){
+        printf("%d\n",arr[i]);
     }
     return 0;
 }
