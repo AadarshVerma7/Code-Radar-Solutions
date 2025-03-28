@@ -8,10 +8,15 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int sort = 0;
+    if(length = 1){
+        sort = 1;
+    }
+    else{
     for(int j = 0; j<=length-2;j++){
         if(arr[j]<=arr[j+1]){
             sort = 1;
         }
+    }
     }
     if(sort){
         printf("Sorted");
