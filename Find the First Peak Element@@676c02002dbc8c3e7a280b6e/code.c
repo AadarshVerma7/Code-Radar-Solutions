@@ -8,9 +8,10 @@ int main(){
         scanf("%d",&arr[i]);
     }   
     int maximum = 0;
-    for(int j = 0; j<length-1;j++){
-        if(arr[j]>arr[j+1]){
+    for(int j = 1; j<length-1;j++){
+        if(arr[j]>arr[j+1] && arr[j]>arr[j-1]){
             maximum = j;
+            break;
         }
     }
     printf("%d",arr[maximum]);
