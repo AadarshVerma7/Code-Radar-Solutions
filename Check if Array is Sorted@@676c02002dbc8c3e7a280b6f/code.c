@@ -13,9 +13,9 @@ int main(){
             sort = 1;
         }
     }
-    if(length = 1){
-        sort = 1;
-    }
+    // if(length = 1){
+    //     sort = 1;
+    // }
     if(sort){
         printf("Sorted");
     }
