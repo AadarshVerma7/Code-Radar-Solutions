@@ -1,38 +1,27 @@
-// Your code here...
 #include <stdio.h>
-int main(){
-    int len;
-    scanf("%d",&len);
-    int arr[len];
-    for(int i=0;i<len;i++){
-        scanf("%d",&arr[i]);
-    }
-    int visited[len];
-    for(int i=0;i<len;i++){
-        visited[i] = 0;
-    }
-    int max_freq[len];
-    for(int i=0;i<len;i++){
-        if(visited[i] == 1){
-            continue;
-        }
 
-        int count = 1;
+int main() {
+    int n;
+    scanf("%d", &n);
 
-        for(int j=i+1;j<len;j++){
-            if(arr[i] == arr[j]){
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+        for (int j = 0; j < n; j++) {
+            if (arr[i] == arr[j]) {
                 count++;
-                visited[j] = 1;
             }
         }
-        max_freq[i] = count;
-    }
-    int max = max_freq[0];
-    for(int i=0;i<len;i++){
-        if(max_freq[i]>max){
-            max = max_freq[i];
+        if (count > n / 2) {
+            printf("%d\n", arr[i]);
+            return 0;
         }
     }
-    printf("%d",max);
+
+    printf("-1\n");
     return 0;
 }
