@@ -9,13 +9,10 @@ int main(){
     }
     int find;
     scanf("%d",&find);
-    int index = 0;
+    int index = -1;
     for(int i=0;i<len;i++){
         if(arr[i] == find){
             index = i;
-        }
-        else{
-            index = -1;
         }
     }
     printf("%d",index);
