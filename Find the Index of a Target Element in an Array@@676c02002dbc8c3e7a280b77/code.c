@@ -18,4 +18,3 @@ int main(){
     printf("%d",index);
     return 0;
 }
-return 0;
