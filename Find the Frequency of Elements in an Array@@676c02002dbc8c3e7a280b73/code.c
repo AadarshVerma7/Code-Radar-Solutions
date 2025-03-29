@@ -12,7 +12,7 @@ int main(){
     }
 
     for(int i=0;i<len;i++){
-        if(visited[i] = 1){
+        if(visited[i] == 1){
             continue;
         }
         int count = 1;
