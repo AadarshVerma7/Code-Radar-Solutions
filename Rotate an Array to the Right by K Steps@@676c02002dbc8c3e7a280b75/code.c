@@ -15,6 +15,7 @@ int main(){
             arr[i+1] = arr[i];
         }
         arr[0] = temp;
+        rotate--;
     }
     for(int j=0;j<len;j++){
         printf("%d ",j);
