@@ -1,20 +1,46 @@
 // Your code here...
+// #include <stdio.h>
+// int main(){
+//     int len;
+//     scanf("%d",&len);
+//     int arr[len];
+//     for(int i=0;i<len;i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     int find;
+//     scanf("%d",&find);
+//     int index = -1;
+//     for(int i=0;i<len;i++){
+//         if(arr[i] == find){
+//             index = i;
+//         }
+//     }
+//     printf("%d",index);
+//     return 0;
+// }
+
 #include <stdio.h>
-int main(){
+
+int main() {
     int len;
-    scanf("%d",&len);
+    scanf("%d", &len);
+    
     int arr[len];
-    for(int i=0;i<len;i++){
-        scanf("%d",&arr[i]);
+    for (int i = 0; i < len; i++) {
+        scanf("%d", &arr[i]);
     }
+    
     int find;
-    scanf("%d",&find);
+    scanf("%d", &find);
+    
     int index = -1;
-    for(int i=0;i<len;i++){
-        if(arr[i] == find){
-            index = i;
+    for (int i = 0; i < len; i++) {
+        if (arr[i] == find) {
+            index = i; // Store the first occurrence
+            break;     // Exit loop after the first match
         }
     }
-    printf("%d",index);
+    
+    printf("%d", index);
     return 0;
 }
