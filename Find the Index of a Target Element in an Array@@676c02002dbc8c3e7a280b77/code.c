@@ -14,6 +14,9 @@ int main(){
         if(arr[i] == find){
             index = i;
         }
+        else{
+            index = -1;
+        }
     }
     printf("%d",index);
     return 0;
