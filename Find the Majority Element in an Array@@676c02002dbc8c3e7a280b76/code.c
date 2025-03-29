@@ -27,12 +27,10 @@ int main(){
         }
         max_freq[i] = count;
     }
-    int max = 0;
+    int max = max_freq[0];
     for(int i=0;i<len;i++){
-        for(int j=i+1;j<len;j++){
-            if(max_freq[j]>max_freq[i]){
-                max = max_freq[j];
-            }
+        if(max_freq[i]>max){
+            max = max_freq[i];
         }
     }
     printf("%d",max);
