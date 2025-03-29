@@ -17,7 +17,7 @@ int main() {
                 count++;
             }
         }
-        if (count > n / 2) {
+        if (count >= n / 2) {
             printf("%d\n", arr[i]);
             return 0;
         }
