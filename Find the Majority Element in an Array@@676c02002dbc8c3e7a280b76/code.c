@@ -28,9 +28,11 @@ int main(){
         max_freq[i] = count;
     }
     int max = 0;
-    for(int i=0;i<len-1;i++){
-        if(max_freq[i]<max_freq[i+1]){
-            max = max_freq[i+1];
+    for(int i=0;i<len;i++){
+        for(int j=i+1;j<len;j++){
+            if(max_freq[j]>max_freq[i]){
+                max = max_freq[j];
+            }
         }
     }
     printf("%d",max);
