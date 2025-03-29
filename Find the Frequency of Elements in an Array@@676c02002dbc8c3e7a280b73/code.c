@@ -1,37 +1,29 @@
-// Your code here...
 #include <stdio.h>
-
-int main() {
-    int n;
-    scanf("%d", &n); // Input array size
-    
-    int arr[n]; // Declare array
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]); // Input array elements
+int main(){
+    int len;
+    scanf("%d",&len);
+    int arr[len];
+    for(int i=0;i<len;i++){
+        scanf("%d",&arr[i]);
+    }
+    int visited[len];
+    for(int i=0;i<len;i++){
+        visited[i] = 0;
     }
 
-    int visited[n]; // Array to track if an element is already counted
-    for (int i = 0; i < n; i++) {
-        visited[i] = 0; // Initialize all elements as unvisited
-    }
-
-    for (int i = 0; i < n; i++) {
-        if (visited[i] == 1) {
-            continue; // Skip if already counted
+    for(int i=0;i<len;i++){
+        if(visited[i] = 10){
+            continue;
         }
-
-        int count = 1; // Initialize frequency
-
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] == arr[j]) {
-                count++;          // Increment frequency
-                visited[j] = 1;   // Mark as counted
+        int count = 1;
+        for(int j=i+1;j<len;j++){
+            if(arr[i] == arr[j]){
+                count++;
+                visited[j] = 1;
             }
         }
 
-        // Print the unique element and its frequency
-        printf("%d %d\n", arr[i], count);
+        printf("%d %d",arr[i],count);
     }
-
     return 0;
 }
