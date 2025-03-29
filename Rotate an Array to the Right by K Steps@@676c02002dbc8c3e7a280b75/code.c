@@ -1,24 +1,24 @@
-// Your code here...
 #include <stdio.h>
 int main(){
-    int len;
-    scanf("%d",&len);
-    int arr[len];
-    for(int i=0;i<len;i++){
+    int length;
+    scanf("%d",&length);
+    int arr[length];
+    for(int i=0;i<length;i++){
         scanf("%d",&arr[i]);
     }
     int rotate;
     scanf("%d",&rotate);
     while(rotate>0){
-        int temp = arr[len-1];
-        for(int i=len-2;i>=0;i--){
+        int temp = arr[length-1];
+        for(int i = length-2;i>=0;i--){
             arr[i+1] = arr[i];
         }
         arr[0] = temp;
         rotate--;
     }
-    for(int j=0;j<len;j++){
-        printf("%d ",j);
+
+    for(int i = 0;i<length;i++){
+        printf("%d\n",arr[i]);
     }
     return 0;
 }
